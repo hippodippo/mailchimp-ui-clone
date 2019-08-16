@@ -1,0 +1,88 @@
+/* CSS Flex */
+
+.flx {
+  display: flex;
+}
+
+.flx-wrap {
+  flex-wrap: wrap;
+}
+
+/* For flex row, just use .flex */
+/* flex direction is set to row by default */
+.flx-row {
+  flex-direction: row;
+}
+
+.flx-column {
+  flex-direction: column;
+}
+
+.flx-jus-center {
+  justify-content: center;
+}
+
+.flx-jus-space-btw {
+  justify-content: space-between;
+}
+
+.flx-ali-center {
+  align-items: center;
+}
+
+.flx-alc-center {
+  align-content: center;
+}
+
+/* ------------------------------ */
+
+.display-none {
+  display: none;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.pos-t0 {
+  top: 0;
+}
+
+.pos-l0 {
+  left: 0;
+}
+
+.pos-r0 {
+  right: 0;
+}
+
+.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+.bg-light {
+  background-color: #959595;
+  opacity: 3;
+}
+
+.bg-dark {
+  background-color: #373737;
+}
+
+.small-meta {
+  font-size: 13px;
+  line-height: inherit;
+}
+
+.lst-none {
+  list-style-type: none;
+}

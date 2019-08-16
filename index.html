@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Basic Page Stuff
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="UTF-8">
+    <title>Campaign Builder</title>
+    <meta name="description" content="">
+    <meta name="author" content="Kaycee Ingram">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet"> -->
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/utilities.css" rel="stylesheet">
+    <link href="./css/nav-bar.css" rel="stylesheet">
+    <link href="./css/editor.css" rel="stylesheet">
+    <link href="./css/mobile-editor.css" rel="stylesheet">
+    <link href="./css/content-tab.css" rel="stylesheet">
+    <link href="./css/design-tab.css" rel="stylesheet">
+    <link href="./css/comments-tab.css" rel="stylesheet">
+    <link href="./css/email.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Nav-Bar -->
+    <div class="nav-bar absolute full-width pos-t0 pos-l0 pos-r0 bg-dark">
+      <div class="nav-bar-left float-left">
+        <a href="#"><img class="logo bg-light" src="./img/mailchimp-brand-assets/Logo/Freddie/PNG/mc_freddie_color.png"/></a>
+        <a class="company-name" href="#">Athetux</a>
+      </div>
+      <div class="nav-bar-right float-right">
+        <nav>
+          <ul class="flx flx-row lst-none">
+            <li><a class="nav-link" href="#">Help</a></li>
+            <li><a class="nav-link" href="#">Preview and Test <img class="icon-arrow" src="./img/upside-down-arrow.png"></a></li>
+            <li><a class="nav-link" href="#">Save as Template</a></li>
+            <li><a class="nav-link" href="#">Save and Exit <img class="icon-arrow" src="./img/upside-down-arrow.png"></a></li>
+          </ul>
+        </nav>
+        <img class="mobile-menu-btn icon-arrow " src="./img/upside-down-arrow.png">
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Email Display -->
+      <div class="email">
+        <header class="email-header flx flx-column flx-ali-center">
+          <h1 class="email-header-logo">Logo</h1>
+          <h1>Showcase your products</h1>
+        </header>
+      </div>
+
+      <!-- Mobile Editor Button -->
+      <div class="mobile-editor-btn-container" id="mobile-editor-btn-container">
+        <button class="mobile-editor-btn" onclick="toggleNav()">
+          <img class="left-arrow" id="left-arrow" src="./img/left-arrow.png" alt="left-arrow">
+          <img class="right-arrow" id="right-arrow" src="./img/right-arrow.png" alt="right-arrow">
+        </button>
+      </div>
+
+      <!-- Mobile Editor -->
+      <div class="mobile-editor" id="mobileEditor">
+
+        <!-- Mobile Editor Top -->
+        <div class="mobile-editor-top flx flx-row flx-jus-center">
+          <button class="mobile-editor-top-links flx flx-ali-center" onclick="showContent()">Content</a>
+          <button class="mobile-editor-top-links flx flx-ali-center" onclick="showDesign()">Design</a>
+          <button class="mobile-editor-top-links flx flx-ali-center" onclick="showComments()">Comments</a>
+        </div>
+
+        <!-- Contents -->
+        <div class="content-cards display-none flx-row flx-jus-center flx-wrap" id="content-cards">
+          <div class="content-card flx flx-column flx-ali-center">
+            <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/text.svg">
+            <div class="content-card-label small-meta">Text</div>
+          </div>
+
+          <div class="content-card flx flx-column flx-ali-center">
+            <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/boxedText.svg">
+            <div class="content-card-label small-meta">Boxed Text</div>
+          </div>
+
+          <div class="content-card flx flx-column flx-ali-center">
+            <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/divider.svg">
+            <div class="content-card-label small-meta">Divider</div>
+          </div>
+
+          <div class="content-card flx flx-column flx-ali-center">
+            <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/image.svg">
+            <div class="content-card-label small-meta">Image</div>
+          </div>
+
+          <div class="content-card flx flx-column flx-ali-center">
+            <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/imageGroup.svg">
+            <div class="content-card-label small-meta">Image Group</div>
+          </div>
+
+          <div class="content-card flx flx-column flx-ali-center">
+            <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/imageCard.svg">
+            <div class="content-card-label small-meta">Image Card</div>
+          </div>
+
+          <div class="content-card flx flx-column flx-ali-center">
+            <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/imageCaption.svg">
+            <div class="content-card-label small-meta">Image + Caption</div>
+          </div>
+
+          <div class="content-card flx flx-column flx-ali-center">
+            <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/socialShare.svg">
+            <div class="content-card-label small-meta">Social Share</div>
+          </div>
+
+          <div class="content-card flx flx-column flx-ali-center">
+            <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/socialFollow.svg">
+            <div class="content-card-label small-meta">Social Follow</div>
+          </div>
+
+          <div class="content-card flx flx-column flx-ali-center">
+            <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/button.svg">
+            <div class="content-card-label small-meta">Button</div>
+          </div>
+
+          <div class="content-card flx flx-column flx-ali-center">
+            <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/footer.svg">
+            <div class="content-card-label small-meta">Footer</div>
+          </div>
+
+          <div class="content-card flx flx-column flx-ali-center">
+              <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/code.svg">
+              <div class="content-card-label small-meta">Code</div>
+            </div>
+
+            <div class="content-card flx flx-column flx-ali-center">
+                <img class="content-card-img" src="https://us18.admin.mailchimp.com/images/campaigns/content-blocks/video.svg">
+                <div class="content-card-label small-meta">Video</div>
+              </div>
+        </div>
+
+        <!-- Design -->
+        <div class="design-links display-none flx-column" id="design-links">
+            <ul class="lst-none">
+              <li class="flx flx-ali-center flx-jus-space-btw">
+                <a>Page </a>
+                <img class="icon-arrow" src="./img/right-grey-arrow.png">
+              </li>
+              <li class="flx flx-ali-center flx-jus-space-btw">
+                <a>Header </a>
+                <img class="icon-arrow" src="./img/right-grey-arrow.png">
+              </li>
+              <li class="flx flx-ali-center flx-jus-space-btw">
+                <a>Body </a>
+                <img class="icon-arrow" src="./img/right-grey-arrow.png">
+              </li>
+              <li class="flx flx-ali-center flx-jus-space-btw">
+                <a>Footer </a>
+                <img class="icon-arrow" src="./img/right-grey-arrow.png">
+              </li>
+              <li class="flx flx-ali-center flx-jus-space-btw">
+                <a>Mobile Styles </a>
+                <img class="icon-arrow" src="./img/right-grey-arrow.png">
+              </li>
+              <li class="flx flx-ali-center flx-jus-space-btw">
+                <a>MonkeyRewards </a>
+                <img class="icon-arrow" src="./img/right-grey-arrow.png">
+              </li>
+            </ul>
+          </div>
+
+        <!-- Comments -->
+        <div class="comments-message display-none flx-column flx-ali-center" id="comments-message">
+          <h3>Awesome Comments Image goes here...</h3>
+        </div>
+      </div>
+
+      <!-- Desktop Editor -->
+      <div class="editor">
+
+        <!-- Editor Top -->
+        <div class="editor-top flx flx-row flx-jus-center">
+          <button class="editor-top-links flx flx-ali-center" onclick="showContent()">Content</a>
+          <button class="editor-top-links flx flx-ali-center" onclick="showDesign()">Design</a>
+          <button class="editor-top-links flx flx-ali-center" onclick="showComments()">Comments</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <!-- <footer>
+      <h1>Footer</h1>
+    </footer> -->
+
+    <script src="./js/mobileEditor.js"></script>
+  </body>
+
+</html>

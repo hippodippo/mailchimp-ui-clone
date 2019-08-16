@@ -1,0 +1,62 @@
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  nav {
+    display: block;
+  }
+}
+
+.icon-arrow {
+  height: 11px;
+  width: 11px;
+  margin-left: 3px;
+}
+
+.mobile-menu-btn {
+  padding: 23px;
+}
+
+@media(min-width: 1025px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.nav-bar {
+  height: 60px;
+}
+
+.nav-bar a {
+  color: #b7b7b7;
+}
+
+.nav-bar-right li {
+  margin-top: 3px;
+  margin-right: 14px;
+}
+
+.nav-link {
+  padding: 23px 17px;
+}
+
+.nav-link:hover {
+  color: #FFF;
+  background-color: #484848;
+}
+
+.logo {
+  height: 38px;
+  width: 36px;
+  vertical-align: middle;
+  padding: 11px 20px;
+}
+
+.company-name {
+  margin-left: 33px;
+}

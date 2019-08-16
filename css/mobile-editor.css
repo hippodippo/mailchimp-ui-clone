@@ -1,0 +1,122 @@
+
+.mobile-editor {
+  height: 100%;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border: 1px solid #DDD;
+  border-left: .5px solid #DDD;
+  color: #373737;
+  background-color: #FFF;
+  overflow-x: hidden;
+  padding-top: 60px;
+  margin-top: 60px;
+  transition: 0.5s;
+}
+
+/* @media (min-width: 1025px) {
+  .mobile-editor {
+    display: none;
+  }
+} */
+
+.mobile-editor-btn-container {
+  width: 39px; /* 0 width - change this with JavaScript */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  color: #373737;
+  background: transparent;
+  overflow-x: hidden;
+  padding: 0;
+  border: none;
+  margin-top: 85px;
+  transition: 0.5s;
+}
+
+/* @media (min-width: 1025px) {
+  .mobile-editor-btn-container {
+    display: none;
+  }
+} */
+
+.mobile-editor-btn {
+  height: 37px;
+  width: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #DDD;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: #FFF;
+}
+
+.left-arrow {
+  display: block;
+  height: 12px;
+  width: 12px;
+}
+
+.right-arrow {
+  display: none;
+  height: 12px;
+  width: 12px;
+}
+
+/* The top mobile editor links */
+/* ------------------------- */
+.mobile-editor-top {
+  margin-bottom: 23px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #DDD;
+}
+
+.mobile-editor-top-links {
+  margin-top: -40px;
+  padding: 0 37px;
+  border: 2.4px solid #EEE;
+  text-decoration: none;
+  font-size: 14px;
+  color: #373737;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.mobile-editor-top-links:focus {
+  outline: 0;
+}
+
+.mobile-editor-top-links:nth-child(1) {
+  border-right: .51px solid #EEE;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.mobile-editor-top-links:nth-child(2) {
+  border-left: .51px solid #EEE;
+  border-right: .51px solid #EEE;
+}
+
+.mobile-editor-top-links:nth-child(3) {
+  border-left: .51px solid #EEE;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* ------------------------- */
+
+
+
+/* When you select the mobile editor links, change their color */
+/* ------------------------------------------------------------ */
+
+.mobile-editor-top-links:focus {
+  border-color: #BADFEB;
+  background-color: #D2EAF2;
+}
+
+/* ------------------------------------------------------------ */

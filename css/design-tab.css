@@ -1,0 +1,11 @@
+
+.design-links ul {
+  margin-top: -23px;
+}
+
+.design-links li {
+  width: 100%;
+  border-bottom: 1px solid #DDD;
+  padding: 23px;
+  margin-left: -39px;
+}

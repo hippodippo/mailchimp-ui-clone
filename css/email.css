@@ -1,0 +1,15 @@
+
+.email-header {
+  width: 100vw;
+  margin-top: -16px;
+  padding: 23px 0;
+  background-color: #F7F7F7;
+}
+
+.email-header-logo {
+  padding: 23px 55px;
+  border-radius: 7px;
+  font-weight: 400;
+  color: #8F8F8F;
+  background-color: #F2F2F2;
+}
